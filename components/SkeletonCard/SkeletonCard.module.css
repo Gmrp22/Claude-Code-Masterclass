@@ -1,0 +1,36 @@
+@reference "../../app/globals.css";
+
+.card {
+  @apply bg-lighter rounded-xl p-6 flex flex-col gap-6;
+}
+
+/* --- header row: avatar + two title lines --- */
+.header {
+  @apply flex flex-row items-center gap-5;
+}
+
+.avatar {
+  @apply bg-light rounded-full shrink-0;
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
+.headerLines {
+  @apply flex flex-col gap-3 flex-1;
+}
+
+/* --- content lines --- */
+.content {
+  @apply flex flex-col gap-3;
+}
+
+/* --- shared bar base --- */
+.bar {
+  @apply bg-light rounded-md h-3 animate-pulse;
+}
+
+/* widths */
+.barFull   { @apply w-full; }
+.barLong   { @apply w-3/5; }
+.barMedium { @apply w-1/2; }
+.barShort  { @apply w-2/5; }
