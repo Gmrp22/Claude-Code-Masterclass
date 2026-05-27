@@ -2,15 +2,21 @@
 description: Create a commit message by analyzing the changes in the code.
 allowed-tools: Bash(git status:*), Bash(git diff:*), Bash(git add:*), Bash(git commit:*)
 ---
+
+# Context
+- Current git status !`git status`
+- Current diff !`git diff --staged`
+<!-- asi esto se corre ANTES DE LLEGAR AL MODELO -->
+
 # Your task
 
 Analyze the git diff and create a concise and descriptive commit message following conventional commits standards (https://www.conventionalcommits.org/en/v1.0.0/)
-## Run these commands
+<!-- ## Run these commands
 
 ```bash
 git status
 git diff --staged
-```
+``` -->
 
 ## Commit types with emojis
 Only use the following emojis:
