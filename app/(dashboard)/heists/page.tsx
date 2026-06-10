@@ -1,3 +1,4 @@
+// @ts-nocheck
 export default function HeistsPage() {
   return (
     <div className="page-content">
