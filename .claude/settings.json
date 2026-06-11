@@ -1,0 +1,24 @@
+{
+    "permissions": {
+        "allow": [
+            "Bash(git status)"
+        ]
+    },
+    "hooks": {
+        "PostToolUse": [
+            {
+                "matcher": "Edit|Write",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "jq . > /Users/gildarivera/Dev/Concepts/Claude-Code-Masterclass/tool-use.json"
+                    },
+                    {
+                        "type": "command",
+                        "command": "jq -r '.tool_input.file_path' | { read fp; [[ \"$fp\" =~ \\.tsx?$ ]] && npx prettier --write \"$fp\"; }"
+                    }
+                ]
+            }
+        ]
+    }
+}

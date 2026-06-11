@@ -4,6 +4,7 @@ allowed-tools: Bash(git status:*), Bash(git diff:*), Bash(git add:*), Bash(git c
 ---
 
 # Context
+
 - Current git status !`git status`
 - Current diff !`git diff --staged`
 <!-- asi esto se corre ANTES DE LLEGAR AL MODELO -->
